@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bilibili html5 player</title>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <script type="text/javascript">
+        if (!!navigator.userAgent.match(/AppleWebKit.*Mobile.*/)) {
+            window.location.href = '//www.bilibili.com/blackboard/html5mobileplayer.html' + window.location.search;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="//player.bilibili.com/main/libs/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="//player.bilibili.com/main/libs/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="//player.bilibili.com/main/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="//s1.hdslb.com/bfs/static/player/tools/player-selector/player-selector.js"></script>
+    <script type="text/javascript">
+    var GetUrlValue = function(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            try {
+                return decodeURIComponent(r[2]);
+            } catch (e) {
+                return null;
+            }
+        }
+        return null;
+    }
+    if (GetUrlValue('bvid')) {
+      window.show_bv = 1;
+    } else {
+      window.show_bv = 0;
+    }
+    </script>
+    <style type="text/css">
+    html, body, .player {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <div id="heimu"></div>
+    <div class="player">
+      <div id="bofqi"></div>
+    </div>
+
+    <script type="text/javascript">
+      var config = {
+        playerKind: "litePlayer"
+      };
+      var Player = new PlayerSelector(config);
+    </script>
+  </body>
+</html>
