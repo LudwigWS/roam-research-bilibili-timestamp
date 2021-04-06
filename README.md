@@ -42,7 +42,7 @@
 
 以下格式会得到解析
 
-- {{iframe:...}}
+- {{iframe: https://player.bilibili.com/player.html?bvid=BV1ZK4y1N74w}}
   - 01:00 note 1
   - 02:00 note 2
 
