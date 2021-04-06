@@ -1,5 +1,7 @@
 # Roam-Research-Bilibili-Timestamp
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FLudwigWS%2Froam-research-bilibili-timestamp&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 支持 iframe 方式嵌入的 Bilibili 播放器跳转
 
 ![illustration](assets/illustration1.gif)
