@@ -88,6 +88,9 @@ function main() {
         button.style.marginRight = '8px';
         button.style.marginLeft = '16px'
         button.style.fontSize = '8px';
+        button.style.display = 'flex';
+        button.style.alignItems = 'center';
+        button.style.justifyContent = 'center';
         const parentEl = block.children[0].children[0];
         parentEl.insertBefore(button, parentEl.querySelectorAll('.roam-block')[0]);
     };

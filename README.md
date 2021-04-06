@@ -32,6 +32,8 @@
 - 打开 Tampermonkey Dashboard - Utilities
 - Install from URL: `https://raw.githubusercontent.com/LudwigWS/roam-research-bilibili-timestamp/main/roam_bilibili.js`
 
+重复上面的操作可以更新脚本
+
 ## 使用
 
 `{{iframe: https://player.bilibili.com/player.html?bvid=<bvid>}}`
